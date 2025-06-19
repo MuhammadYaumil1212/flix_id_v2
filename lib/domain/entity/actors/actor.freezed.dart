@@ -1,0 +1,151 @@
+// dart format width=80
+// coverage:ignore-file
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
+
+part of 'actor.dart';
+
+// **************************************************************************
+// FreezedGenerator
+// **************************************************************************
+
+// dart format off
+T _$identity<T>(T value) => value;
+/// @nodoc
+mixin _$Actor {
+
+@JsonKey(name: 'name') String get name;@JsonKey(name: 'original_name') String get originalName;@JsonKey(name: 'popularity') double? get popularity;@JsonKey(name: 'profile_path') String? get profilePath;
+/// Create a copy of Actor
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$ActorCopyWith<Actor> get copyWith => _$ActorCopyWithImpl<Actor>(this as Actor, _$identity);
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is Actor&&(identical(other.name, name) || other.name == name)&&(identical(other.originalName, originalName) || other.originalName == originalName)&&(identical(other.popularity, popularity) || other.popularity == popularity)&&(identical(other.profilePath, profilePath) || other.profilePath == profilePath));
+}
+
+
+@override
+int get hashCode => Object.hash(runtimeType,name,originalName,popularity,profilePath);
+
+@override
+String toString() {
+  return 'Actor(name: $name, originalName: $originalName, popularity: $popularity, profilePath: $profilePath)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class $ActorCopyWith<$Res>  {
+  factory $ActorCopyWith(Actor value, $Res Function(Actor) _then) = _$ActorCopyWithImpl;
+@useResult
+$Res call({
+@JsonKey(name: 'name') String name,@JsonKey(name: 'original_name') String originalName,@JsonKey(name: 'popularity') double? popularity,@JsonKey(name: 'profile_path') String? profilePath
+});
+
+
+
+
+}
+/// @nodoc
+class _$ActorCopyWithImpl<$Res>
+    implements $ActorCopyWith<$Res> {
+  _$ActorCopyWithImpl(this._self, this._then);
+
+  final Actor _self;
+  final $Res Function(Actor) _then;
+
+/// Create a copy of Actor
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? name = null,Object? originalName = null,Object? popularity = freezed,Object? profilePath = freezed,}) {
+  return _then(_self.copyWith(
+name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,originalName: null == originalName ? _self.originalName : originalName // ignore: cast_nullable_to_non_nullable
+as String,popularity: freezed == popularity ? _self.popularity : popularity // ignore: cast_nullable_to_non_nullable
+as double?,profilePath: freezed == profilePath ? _self.profilePath : profilePath // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+
+}
+
+
+/// @nodoc
+
+
+class _Actor implements Actor {
+  const _Actor({@JsonKey(name: 'name') required this.name, @JsonKey(name: 'original_name') required this.originalName, @JsonKey(name: 'popularity') this.popularity, @JsonKey(name: 'profile_path') this.profilePath});
+  
+
+@override@JsonKey(name: 'name') final  String name;
+@override@JsonKey(name: 'original_name') final  String originalName;
+@override@JsonKey(name: 'popularity') final  double? popularity;
+@override@JsonKey(name: 'profile_path') final  String? profilePath;
+
+/// Create a copy of Actor
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$ActorCopyWith<_Actor> get copyWith => __$ActorCopyWithImpl<_Actor>(this, _$identity);
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Actor&&(identical(other.name, name) || other.name == name)&&(identical(other.originalName, originalName) || other.originalName == originalName)&&(identical(other.popularity, popularity) || other.popularity == popularity)&&(identical(other.profilePath, profilePath) || other.profilePath == profilePath));
+}
+
+
+@override
+int get hashCode => Object.hash(runtimeType,name,originalName,popularity,profilePath);
+
+@override
+String toString() {
+  return 'Actor(name: $name, originalName: $originalName, popularity: $popularity, profilePath: $profilePath)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$ActorCopyWith<$Res> implements $ActorCopyWith<$Res> {
+  factory _$ActorCopyWith(_Actor value, $Res Function(_Actor) _then) = __$ActorCopyWithImpl;
+@override @useResult
+$Res call({
+@JsonKey(name: 'name') String name,@JsonKey(name: 'original_name') String originalName,@JsonKey(name: 'popularity') double? popularity,@JsonKey(name: 'profile_path') String? profilePath
+});
+
+
+
+
+}
+/// @nodoc
+class __$ActorCopyWithImpl<$Res>
+    implements _$ActorCopyWith<$Res> {
+  __$ActorCopyWithImpl(this._self, this._then);
+
+  final _Actor _self;
+  final $Res Function(_Actor) _then;
+
+/// Create a copy of Actor
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? name = null,Object? originalName = null,Object? popularity = freezed,Object? profilePath = freezed,}) {
+  return _then(_Actor(
+name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,originalName: null == originalName ? _self.originalName : originalName // ignore: cast_nullable_to_non_nullable
+as String,popularity: freezed == popularity ? _self.popularity : popularity // ignore: cast_nullable_to_non_nullable
+as double?,profilePath: freezed == profilePath ? _self.profilePath : profilePath // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+
+
+}
+
+// dart format on
