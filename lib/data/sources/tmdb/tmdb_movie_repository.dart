@@ -7,14 +7,14 @@ import 'package:flix_id/domain/entity/result/result.dart';
 import 'package:flix_id/domain/repositories/movie_repository.dart';
 
 class TmdbMovieRepository extends MovieRepository {
-  final DioClient _dio;
-  TmdbMovieRepository(this._dio);
+  final DioClient dio;
+  TmdbMovieRepository({required this.dio});
 
   @override
   Future<Result<List<Actor>>> getActors({required int movieId}) async {
     // TODO: implement getActors
     try {
-      final response = await _dio.get(
+      final response = await dio.get(
         "https://api.themoviedb.org/3/movie/movie_id/credits?language=en-US",
       );
       final results = List<Map<String, dynamic>>.from(response.data['cast']);
@@ -28,7 +28,7 @@ class TmdbMovieRepository extends MovieRepository {
   Future<Result<DetailMovie>> getMovieDetails({required int movieId}) async {
     // TODO: implement getMovieDetails
     try {
-      final response = await _dio.get(
+      final response = await dio.get(
         "https://api.themoviedb.org/3/movie/$movieId?language=en-US",
       );
       return Result.success(DetailMovie.fromJSON(response.data));
@@ -50,7 +50,7 @@ class TmdbMovieRepository extends MovieRepository {
     int page = 1,
   }) async {
     try {
-      final response = await _dio.get(
+      final response = await dio.get(
         "https://api.themoviedb.org/3/movie/$category/now_playing?language=en-US&page=$page",
       );
       final result = List<Map<String, dynamic>>.from(response.data['result']);
