@@ -11,6 +11,7 @@ import 'package:flix_id/domain/usecases/upload_profile_picture/Upload_profile_pi
 import 'package:flix_id/domain/usecases/upload_profile_picture/upload_profile_picture.dart';
 import 'package:flix_id/presentations/providers/movie/now_playing/now_playing_provider.dart';
 import 'package:flix_id/presentations/providers/movie/upcoming/upcoming_provider.dart';
+import 'package:flix_id/presentations/providers/transaction/transaction_data_provider.dart';
 import 'package:flix_id/presentations/providers/usecases/get_loggedin_user/get_loggedin_user_provider.dart';
 import 'package:flix_id/presentations/providers/usecases/login/login_provider.dart';
 import 'package:flix_id/presentations/providers/usecases/logout/logout_provider.dart';
@@ -101,6 +102,7 @@ class UserData extends _$UserData {
       var result = await topup(TopupParams(amount: amount, userId: userId));
       if (result.isSuccess) {
         refreshUserData();
+        ref.read(transactionDataProvider.notifier).refreshTransactionData();
       }
     }
   }
