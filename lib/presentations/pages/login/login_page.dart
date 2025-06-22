@@ -1,7 +1,7 @@
 import 'package:flix_id/config/navigation/app_navigation.dart';
 import 'package:flix_id/domain/usecases/login/login_usecase.dart';
 import 'package:flix_id/presentations/pages/home_page/home_page.dart';
-import 'package:flix_id/presentations/providers/usecases/login_provider.dart';
+import 'package:flix_id/presentations/providers/usecases/login/login_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
